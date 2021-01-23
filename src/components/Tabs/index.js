@@ -22,10 +22,11 @@ export default class index extends Component {
         const {tab} = this.state
         return (
             <div className="Tabs">
-                <div className={"Content"}>{this.props.tab[tab].content}</div>
-                <div className={"TabWrapper"}>{this.props.tab&&this.props.tab.map((e,i)=>{
+            <div className={"TabWrapper"}>{this.props.tab&&this.props.tab.map((e,i)=>{
                     return <Tab icon={e.icon} isActive={tab==i} key={i} id={e.title} title={e.title} onClick={(e)=>this.setState({tab:i})}/>
                 })}</div>
+                <div className={"Content"}>{this.props.tab[tab].content}</div>
+                
             </div>
         )
     }
