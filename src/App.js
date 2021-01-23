@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Tabs from './components/Tabs'
+import I from "./components/icons/"
+import {Drive} from "./components/Remotes"
+import "./App.css"
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state={}
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <Tabs tab={[
+          {
+            title:"drive",
+            icon:I.drive,
+            content:<div><h1>Drive</h1></div>
+          },
+
+          {
+            title:"vlc",
+            icon:I.vlc,
+            content:<div><h1>VLC</h1></div>
+          }
+         
+          ]}></Tabs>
+      </div>
+    )
+  }
 }
-
-export default App;
