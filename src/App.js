@@ -6,7 +6,7 @@ import "./App.css"
 export default class App extends Component {
   constructor(){
     super();
-    this.state={}
+    this.state={url:""}
   }
 
   render() {
@@ -22,7 +22,10 @@ export default class App extends Component {
           {
             title:"vlc",
             icon:I.vlc,
-            content:<div><h1>VLC</h1></div>
+            content:<div>
+              <input className={"url"} onChange={(e)=>this.setState({url:e.target.value})} value={this.state.url}/>
+              <button onClick={()=>localStorage.setItem("url",this.state.url)}>set</button>
+            </div>
           }
          
           ]}></Tabs>
