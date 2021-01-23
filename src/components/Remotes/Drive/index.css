@@ -12,6 +12,7 @@
   height: 65px;
   margin: 0.3em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter:saturate(2) brightness(2) hue-rotate(330deg);
 }
 
 .btn{
@@ -39,7 +40,7 @@ transform: scale(0.1) rotate(360deg);
 .flexrow .btn{
   box-shadow: none;
   margin:0 0.1em;
-
+  backdrop-filter: none;
 }
 
 

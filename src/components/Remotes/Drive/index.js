@@ -74,6 +74,12 @@ export default class index extends Component {
                   <div className={"btn"} onClick={()=>{this.setState({number:this.state.number<9?this.state.number+1:9})}}><img src={I.add} alt={"add"}/></div>
                 </div>
 
+                <div className={"btn"} onClick={e=>{this.sendRequest("enter",this.state.number)}}><img src={I.enter} alt={"enter"}/></div>
+                <div className={"btn"} onClick={e=>{this.sendRequest("speed",this.state.number)}}><img src={I.speed} alt={"speed"}/></div>
+                <div className={"btn"} onClick={e=>{this.sendRequest("q",this.state.number)}}><img src={I.q} alt={"q"}/></div>
+                <div className={"btn"} onClick={e=>{this.sendRequest("esc",this.state.number)}}><img src={I.esc} alt={"esc"}/></div>
+
+
             </div>
         )
     }
