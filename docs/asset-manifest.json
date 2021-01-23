@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PCCFront/static/css/main.ab6746b5.chunk.css",
+    "main.css": "/PCCFront/static/css/main.84a2d215.chunk.css",
     "main.js": "/PCCFront/static/js/main.a9547fcb.chunk.js",
     "main.js.map": "/PCCFront/static/js/main.a9547fcb.chunk.js.map",
     "runtime-main.js": "/PCCFront/static/js/runtime-main.99aa74ed.js",
@@ -10,13 +10,13 @@
     "static/js/3.9e6c72bf.chunk.js": "/PCCFront/static/js/3.9e6c72bf.chunk.js",
     "static/js/3.9e6c72bf.chunk.js.map": "/PCCFront/static/js/3.9e6c72bf.chunk.js.map",
     "index.html": "/PCCFront/index.html",
-    "static/css/main.ab6746b5.chunk.css.map": "/PCCFront/static/css/main.ab6746b5.chunk.css.map",
+    "static/css/main.84a2d215.chunk.css.map": "/PCCFront/static/css/main.84a2d215.chunk.css.map",
     "static/js/2.3b9f1533.chunk.js.LICENSE.txt": "/PCCFront/static/js/2.3b9f1533.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99aa74ed.js",
     "static/js/2.3b9f1533.chunk.js",
-    "static/css/main.ab6746b5.chunk.css",
+    "static/css/main.84a2d215.chunk.css",
     "static/js/main.a9547fcb.chunk.js"
   ]
 }
