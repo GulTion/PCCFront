@@ -8,12 +8,12 @@ export default class index extends Component {
     super();
     this.state={
       number:1,
-      URL:""
+      URL:"http://3542825ca758.ngrok.io"
     }
   }
-  componentDidMount(){
-    this.setState({URL:localStorage.getItem("url")})
-  }
+  // componentDidMount(){
+  //   this.setState({URL:localStorage.getItem("url")})
+  // }
 
   sendRequest(type,how=1){
     fetch(`${this.state.URL}/${type}/${how}/`).then(res=>res.text()).then(e=>console.log(e))
