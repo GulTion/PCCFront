@@ -16,7 +16,7 @@ export default class App extends Component {
           {
             title:"drive",
             icon:I.drive,
-            content:<div><h1>Drive</h1></div>
+            content:<Drive />
           },
 
           {

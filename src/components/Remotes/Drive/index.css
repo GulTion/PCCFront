@@ -1,0 +1,27 @@
+.RemoteDrive{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.flexrow{
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 10px;
+  margin: 0.1em;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:65px;
+  height:65px;
+  margin: 0.3em;
+  border-radius: 10px;
+  backdrop-filter:saturate(2) brightness(2) hue-rotate(330deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+
