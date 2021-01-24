@@ -4,19 +4,19 @@ import I from '../../icons/'
 
 
 export default class index extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
       number:1,
-      URL:"https://pccback.loca.lt"
+      URL:""
     }
   }
-  // componentDidMount(){
-  //   this.setState({URL:localStorage.getItem("url")})
-  // }
+  componentDidMount(){
+    this.setState({URL:this.props.URL})
+  }
 
   sendRequest(type,how=1){
-    fetch(`${this.state.URL}/${type}/${how}/`).then(res=>res.text()).then(e=>console.log(e))
+    fetch(`${this.state.URL}/${type}/${how}/`).then(res=>res.text()).then(e=>console.log(this.props.URL))
   }
     render() {
         return (

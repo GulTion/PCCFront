@@ -6,7 +6,7 @@ import "./App.css"
 export default class App extends Component {
   constructor(){
     super();
-    this.state={url:""}
+    this.state={URL:""}
   }
 
   render() {
@@ -16,7 +16,7 @@ export default class App extends Component {
           {
             title:"drive",
             icon:I.drive,
-            content:<Drive />
+            content:<Drive URL={this.state.URL}/>
           },
 
           {
@@ -25,6 +25,13 @@ export default class App extends Component {
             content:<div>
               <input className={"url"} onChange={(e)=>this.setState({url:e.target.value})} value={this.state.url}/>
               <button onClick={()=>localStorage.setItem("url",this.state.url)}>set</button>
+            </div>
+          },
+          {
+            title:"config",
+            icon:I.config,
+            content:<div className="flexrow">
+                <input type={"text"} onChange={e=>{this.setState({URL:e.target.value})}} value={this.state.URL}/>
             </div>
           }
          

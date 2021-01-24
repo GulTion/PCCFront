@@ -36,6 +36,8 @@ import _9 from "./number-9.svg"
 
 
 import esc from "./esc.svg"
+import config from "./config.svg"
+
 
 const I = {
     vlc,     drive,     up,             left,       right,
@@ -44,7 +46,7 @@ const I = {
     add,     minus,     _0,             _1,         _2,
     _3,      _4,        _5,             _6,         _7,
     _8,      _9,        q,              speed,      volume,
-    enter,   esc
+    enter,   esc,       config
 }
 
 export default I
