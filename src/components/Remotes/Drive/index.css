@@ -9,7 +9,7 @@
   display: flex;
   flex-flow: row nowrap;
   border-radius: 10px;
-  height: 65px;
+  height: 60px;
   margin: 0.3em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   backdrop-filter:saturate(2) brightness(2) hue-rotate(330deg);
@@ -19,8 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width:65px;
-  height:65px;
+  width:60px;
+  height:60px;
   margin: 0.3em;
   border-radius: 10px;
   backdrop-filter:saturate(2) brightness(2) hue-rotate(330deg);

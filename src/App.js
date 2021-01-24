@@ -3,20 +3,29 @@ import Tabs from './components/Tabs'
 import I from "./components/icons/"
 import {Drive} from "./components/Remotes"
 import "./App.css"
+import {motion} from "framer"
+
+import Alert from  "./components/Alert/"
+
 export default class App extends Component {
   constructor(){
     super();
-    this.state={URL:""}
+    this.state={
+      URL:"",
+      isAlert:true
+      }
   }
 
   render() {
+    const {URL, isAlert} = this.state
     return (
       <div className="App">
+          {this.state.isAlert&&<Alert data={this.state.URL} onClose={()=>this.setState({isAlert:false})}/>}
         <Tabs tab={[
           {
             title:"drive",
             icon:I.drive,
-            content:<Drive URL={this.state.URL}/>
+            content:<Drive URL={URL}/>
           },
 
           {
@@ -33,6 +42,16 @@ export default class App extends Component {
             content:<div className="flexrow">
                 <input type={"text"} onChange={e=>{this.setState({URL:e.target.value})}} value={this.state.URL}/>
             </div>
+          },
+          {
+            title:"mouse",
+            icon:I.mouse,
+            content:<div className={"pad"}><motion.div 
+            drag 
+            dragMomentum={true}
+            dragElastic={0.01}
+            className={"move"}
+            ></motion.div></div>
           }
          
           ]}></Tabs>

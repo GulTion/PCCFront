@@ -1,0 +1,29 @@
+.Alert{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  background: linear-gradient(45deg, rgba(255, 57, 57, 0.61), rgba(173, 216, 230, 0));
+  z-index: 2;
+  align-items: center;
+
+}
+.Alert img{
+  width:50px;
+  height: 50px; 
+  margin: 0.5em;
+}
+.Alert div{
+  width: 100%;
+  padding: 0 0.5em;
+  font-size: 1.1em;
+  color: white;
+
+}
+.Alert-bad{
+  background: linear-gradient(45deg, rgba(221, 0, 0, 0.699), rgba(173, 216, 230, 0));
+}
+.Alert-good{
+  background: linear-gradient(45deg, rgba(0, 194, 10, 0.527), rgba(173, 216, 230, 0));
+}
