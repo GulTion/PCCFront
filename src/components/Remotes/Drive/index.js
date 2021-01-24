@@ -8,7 +8,7 @@ export default class index extends Component {
     super();
     this.state={
       number:1,
-      URL:"http://3542825ca758.ngrok.io"
+      URL:"https://pccback.loca.lt"
     }
   }
   // componentDidMount(){
